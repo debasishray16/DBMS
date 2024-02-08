@@ -96,8 +96,8 @@ JOIN departments ON employees.department_id = departments.department_id;
 ## Procedural and Non Procedural DML
 
 Procedural DML- Procedural DML require a user to specify what data are needed and how to get the data at what time.
-1.Stored Procedures, Functions, Triggers
-2.Control Flow and Logic
+1. Stored Procedures, Functions, Triggers
+2. Control Flow and Logic
 
 ```sql
 CREATE PROCEDURE updateSalary(employee_id INT, new_salary DECIMAL)
@@ -107,8 +107,8 @@ END;
 ```
 
 Non Procedural DML-  Non Procedural DML requires a user to specify what data are needed without specifying how to get the data.
-1.SQL queries
-2.Set Based Operations
+1. SQL queries
+2. Set Based Operations
 
 ```sql
 SELECT * FROM employees WHERE department_id = 10;
