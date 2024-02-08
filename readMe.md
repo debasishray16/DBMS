@@ -1,5 +1,7 @@
 #
 
+
+
 ## Data Control Language
 
 DCL commands are used to /get back/ control the privileges of an object by the user.
@@ -80,4 +82,37 @@ SELECT UPPER(first_name), LOWER(last_name) FROM employees;
 SELECT employees.first_name, departments.department_name
 FROM employees
 JOIN departments ON employees.department_id = departments.department_id;
+```
+
+
+
+
+
+
+
+
+
+
+## Procedural and Non Procedural DML
+
+Procedural DML- Procedural DML require a user to specify what data are needed and how to get the data at what time.
+1.Stored Procedures, Functions, Triggers
+2.Control Flow and Logic
+
+```sql
+CREATE PROCEDURE updateSalary(employee_id INT, new_salary DECIMAL)
+BEGIN
+    UPDATE employees SET salary = new_salary WHERE id = employee_id;
+END;
+```
+
+Non Procedural DML-  Non Procedural DML requires a user to specify what data are needed without specifying how to get the data.
+1.SQL queries
+2.Set Based Operations
+
+```sql
+SELECT * FROM employees WHERE department_id = 10;
+INSERT INTO employees (name, salary) VALUES ('John', 50000);
+UPDATE employees SET salary = salary * 1.1 WHERE department_id = 20;
+DELETE FROM employees WHERE id = 100;
 ```
