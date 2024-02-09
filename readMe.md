@@ -96,6 +96,7 @@ JOIN departments ON employees.department_id = departments.department_id;
 ## Procedural and Non Procedural DML
 
 Procedural DML- Procedural DML require a user to specify what data are needed and how to get the data at what time.
+
 1. Stored Procedures, Functions, Triggers
 2. Control Flow and Logic
 
@@ -107,6 +108,7 @@ END;
 ```
 
 Non Procedural DML-  Non Procedural DML requires a user to specify what data are needed without specifying how to get the data.
+
 1. SQL queries
 2. Set Based Operations
 
@@ -116,3 +118,24 @@ INSERT INTO employees (name, salary) VALUES ('John', 50000);
 UPDATE employees SET salary = salary * 1.1 WHERE department_id = 20;
 DELETE FROM employees WHERE id = 100;
 ```
+
+
+
+
+
+## Types of DBMS Users
+
+1. Naive Users: Naive users are those that don't have prior knowledge about DBMS. They directly use the application software interface to interact with the database.
+
+2. Application Programmers: Application Programmers are those that have prior knowledge about DBMS and how it works. They write code to develop their own DBMS applications.
+Programs are written in C++,JAVA,Python etc.
+
+3. Sophisticated Users: Sophisticated users are those users who have prior knowledge about database and DBMS. But they don't write code , but able to manage using queries.
+eg. Business Analyst, Researchers
+
+4. Native Users: Native users are those who use the existing database applications. They don't write code or queries.
+eg. Library management system.
+
+5. Specialized Users: Specialized users are those who write the code for DBMS applications. They are the developers who develop the complex programs to the requirement.
+
+6. Stand-Alone Users: Stand-Alone Users are those who have the ability to develop their own database for their own use.
