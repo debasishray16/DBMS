@@ -51,3 +51,17 @@ There are five types of constraints:
 ```
 
 2. UNIQUE constraint: UNIQUE constraints designates a column as the unique key.
+
+```text
+1. Unique Constraint allows null values and it allows more number of NULL values.
+2. To satisfy the unique constraint, no two rows in the table can have the same value for the unique constraint.
+3. You cannot specify a unique key when creating a subview in an inheritance hierarchy.
+4. The unique key can beb specified only on the top-level (root) view.
+5. A composite unique cannot have more than 32 columns.
+```
+
+```db
+Create table <table_name> ( column_1 datatype Constraint <constraint_name>
+<constraint_type>, column_2 datatype,
+column_n datatype);
+```
