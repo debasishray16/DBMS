@@ -1,7 +1,5 @@
 #
 
-
-
 ## Data Control Language
 
 DCL commands are used to /get back/ control the privileges of an object by the user.
@@ -84,15 +82,6 @@ FROM employees
 JOIN departments ON employees.department_id = departments.department_id;
 ```
 
-
-
-
-
-
-
-
-
-
 ## Procedural and Non Procedural DML
 
 Procedural DML- Procedural DML require a user to specify what data are needed and how to get the data at what time.
@@ -118,10 +107,6 @@ INSERT INTO employees (name, salary) VALUES ('John', 50000);
 UPDATE employees SET salary = salary * 1.1 WHERE department_id = 20;
 DELETE FROM employees WHERE id = 100;
 ```
-
-
-
-
 
 ## Types of DBMS Users
 
