@@ -199,6 +199,8 @@ mysql> SELECT EID from emp WHERE EID IN (select EID from emp1);
 
 ## SQL JOIN
 
+### INNER JOIN
+
 ```sql
 mysql> select * from emp INNER JOIN emp1 ON emp.EID=emp1.EID;
 +-----+----------------+--------+-------+--------------------------+-----+----------------+--------+------+--------------------------+
@@ -273,5 +275,24 @@ mysql> select emp.EID,emp1.DESIGNATION from emp INNER JOIN emp1 ON emp.EID=emp1.
 +-----+--------------------------+
 10 rows in set (0.00 sec)
 
+mysql> select emp.EID,emp1.ENAME from emp INNER JOIN emp1 ON emp.EID=emp1.EID;
++-----+----------------+
+| EID | ENAME          |
++-----+----------------+
+| 101 | John Doe       |
+| 102 | Alice Smith    |
+| 103 | Bob Johnson    |
+| 104 | Emily Davis    |
+| 105 | Michael Brown  |
+| 106 | Emma Wilson    |
+| 107 | David Martinez |
+| 108 | Sophia Taylor  |
+| 109 | James Clark    |
+| 110 | Olivia White   |
++-----+----------------+
+10 rows in set (0.00 sec)
 
 ```
+
+### OUTER JOIN
+
